@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Bellefair';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../assets/fonts/Bellefair-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Bellefair-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../assets/fonts/Poppins-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Poppins-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../assets/fonts/Poppins-Light.woff2') format('woff2'),
+    url('../assets/fonts/Poppins-Light.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baskervville';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../assets/fonts/Baskervville-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Baskervville-Regular.woff') format('woff');
+  font-display: swap;
+}

@@ -1,0 +1,100 @@
+.museum {
+  &__inner {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, min-max(535px, 1fr));
+    // grid-template-columns: repeat(auto-fit, min-max(620px, 486px));
+    gap: 1.2rem;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      background-color: var(--silver-gray);
+    }
+
+    &::before {
+      top: 0;
+      transform: translateY(10%);
+      left: 40%;
+      max-height: 82rem;
+      height: 100%;
+    }
+
+    &::after {
+      top: 0;
+      right: 0;
+      max-height: 92rem;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    grid-row: span 2;
+    display: flex;
+    align-items: center;
+    max-width: 55.6rem;
+    width: 100%;
+    font-family: 'Bellefair';
+    font-size: 10.8rem;
+    text-transform: uppercase;
+  }
+
+  &__img {
+    grid-column: 2 / 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    max-width: 73.5rem;
+    width: 100%;
+    max-height: 87.5rem;
+    height: 100%;
+  }
+
+  &__text > p {
+    max-width: 44.2rem;
+    width: 100%;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 2.8rem;
+    line-height: 1.4;
+  }
+
+  &__text--second > p {
+    max-width: 81rem;
+    width: 100%;
+    font-family: 'Poppins';
+    font-size: 2.4rem;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    grid-column: 2;
+    font-family: 'Bellefair';
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    position: relative;
+    padding: 4.2rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      z-index: -1;
+      background-color: --ash-gray;
+    }
+  }
+}

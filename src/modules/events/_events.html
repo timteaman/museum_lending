@@ -1,0 +1,53 @@
+<section class="events">
+  <div class="events__inner">
+
+    <div class="events__top">
+      <h2 class="events__title">
+        Upcoming Events
+      </h2>
+
+      <a class="events__link" href="#">
+        view all
+      </a>
+    </div>
+
+
+    <div class="swiper events-slider">
+      <ul class="swiper-wrapper events-slider__wrapper">
+        @loop('../components/slides/_slides.html',
+        '../modules/components/slides/slides.json')
+      </ul>
+    </div>
+
+    <div class="events-slider__actions slider-actions">
+
+      <button
+        class="events-slider__btn events-slider__btn--prev slider-actions__btn slider-actions__btn--prev icon icon--prev"
+        type="button">
+        <span class="sr-only">
+          Нерелистнути слайд вліло
+        </span>
+      </button>
+
+      <div class="events-slider__dots slider-actions__dots">
+        <div class="events-slider__dots slider-actions__dots">
+          <span class="sr-only">
+            Навігація по слайдам
+          </span>
+        </div>
+      </div>
+
+      <button
+        class="events-slider__btn events-slider__btn--next slider-actions__btn slider-actions__btn--next icon icon--next"
+        type="button">
+        <span class="sr-only">
+          Нерелистнути слайд вправо
+        </span>
+      </button>
+
+    </div>
+
+
+
+  </div>
+</section>

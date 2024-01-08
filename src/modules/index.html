@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@include('./components/head/_head.html', {'title': 'Museum | Art collection'})
+
+<body>
+
+  <div class="wrapper">
+    @include('./components/header/_header.html')
+
+    <main class="main">
+      <div class="container">
+
+        @include('./hero/_hero.html')
+
+        @include('./museum/_museum.html')
+
+        @include('./events/_events.html')
+
+      </div>
+    </main>
+
+    @include('./components/footer/_footer.html')
+
+  </div>
+
+  <script src="./js/swiperjs.min.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>

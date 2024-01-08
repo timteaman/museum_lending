@@ -1,0 +1,49 @@
+.icon {
+  &::before {
+    content: '';
+    display: inline-block;
+    background-color: var(--pure-white);
+    min-width: 2.4rem;
+    height: 2.4rem;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    transition: background-color 0.3s, color 0.3s, outline-color 0.3s;
+  }
+
+  &--mail {
+    &::before {
+      mask-image: url('../assets/icons/sprite.svg#mail');
+    }
+  }
+
+  &--location {
+    &::before {
+      mask-image: url('../assets/icons/sprite.svg#location');
+    }
+  }
+
+  &--chevronbig-left {
+    &::before {
+      mask-image: url('../assets/icons/sprite.svg#chevronbig-left');
+    }
+  }
+
+  &--chevronbig-right {
+    &::before {
+      mask-image: url('../assets/icons/sprite.svg#chevronbig-right');
+    }
+  }
+
+  &--chevronsmall-left {
+    &::before {
+      mask-image: url('../assets/icons/sprite.svg#chevronsmall-left');
+    }
+  }
+
+  &--chevronsmall-right {
+    &::before {
+      mask-image: url('../assets/icons/sprite.svg#chevronsmall-right');
+    }
+  }
+}

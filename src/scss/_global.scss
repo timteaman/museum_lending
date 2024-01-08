@@ -1,0 +1,105 @@
+html {
+  font-size: 10px;
+}
+
+html,
+body {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  @include fontFamily('Baskervville');
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: normal;
+  color: var(--pure-white);
+  background-color: var(--jet-black);
+}
+
+.wrapper {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 128rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 1rem;
+
+  &__text {
+    display: inline-block;
+    max-width: 5.8rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.section {
+  padding: 0 0 10rem 0;
+}
+
+// .fixed {
+//     z-index: 99;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     padding: 25px 0px !important;
+//     background-color: $peorpleLight;
+//     transition: background-color 0.4s;
+// }
+
+// .logo {
+//     border-radius: 5px;
+//     transition: opacity 0.3s, outline 0.3s;
+//     outline-offset: 3px;
+
+//     &:hover {
+//         opacity: 0.7;
+//     }
+
+//     &:focus {
+//         outline: 2px solid rgba($orange-900, 0.70);
+//     }
+
+//     &:active {
+//         opacity: 0.5;
+//     }
+// }
+
+// .title {
+//     font-weight: 500;
+//     font-size: 36px;
+//     color: $darkBlue-900;
+//     margin-bottom: 60px;
+//     text-align: center;
+// }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

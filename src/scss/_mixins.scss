@@ -1,0 +1,39 @@
+@mixin line-clamp($lines: 1) {
+    @if $lines <=1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    @else {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical;
+    }
+}
+
+// .class {
+//     font-size: 14px;
+//     @include line-clamp(3);
+// }
+
+@mixin r($width) {
+    @media (max-width: #{$width}px) {
+        @content;
+    }
+}
+
+@mixin fontFamily($fontName) {
+    font-family: #{$fontName}, Arial, Tahoma, sans-serif;
+}
+
+// @include fontFamily('Euclid Galactic');
+
+@mixin bg-image($image-path) {
+    background-image: url($image-path);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

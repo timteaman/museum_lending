@@ -1,0 +1,16 @@
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+@import 'mixins';
+@import 'global';
+@import 'icons';
+
+@import '../modules/hero/hero';
+@import '../modules/museum/museum';
+@import '../modules/events/events';
+
+// components
+@import '../modules/components/footer/footer';
+@import '../modules/components/header/header';
+@import '../modules/components/slides/slides';
+@import '../modules/components/swiperjs/swiperjs';

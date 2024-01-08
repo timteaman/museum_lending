@@ -1,0 +1,18 @@
+.header {
+  padding: 2rem 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  &__list {
+    display: flex;
+    gap: 3.6rem;
+  }
+
+  &__link {
+    text-transform: uppercase;
+  }
+}

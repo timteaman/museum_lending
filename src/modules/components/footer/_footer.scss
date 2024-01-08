@@ -1,0 +1,89 @@
+.footer {
+  padding-bottom: 3.2rem;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5.2rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.2rem;
+    padding: 1rem;
+  }
+
+  &__link {
+    text-transform: uppercase;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 58.2rem;
+    width: 100%;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 2.2rem;
+  }
+
+  &__text {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+
+  &__form {
+    margin-bottom: 3.2rem;
+  }
+
+  &__input {
+    border: 1px solid var(--pure-white);
+    padding: 2.2rem 3rem;
+    max-width: 58.2rem;
+    width: 100%;
+    margin-bottom: 1.4rem;
+
+    &::placeholder {
+      font-family: 'Baskervville';
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__btn {
+    padding: 1.9rem 5.6rem;
+    border: 1px solid var(--pure-white);
+    background-color: var(--slate-gray);
+    text-transform: uppercase;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__contact-link {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+}

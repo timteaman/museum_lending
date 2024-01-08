@@ -1,0 +1,28 @@
+.hero {
+  // max-height: 98rem;
+  // height: 100%;
+  &__inner {
+    height: 98rem;
+    @include bg-image('../../../assets/images/hero/hero-bg.png');
+  }
+
+  &__title {
+    font-family: 'Bellefair';
+    font-size: 9rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      max-height: 45rem;
+      height: 100%;
+      width: 100vw;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(70deg, #111 15.93%, rgba(0, 0, 0, 0) 115.05%);
+    }
+  }
+}
