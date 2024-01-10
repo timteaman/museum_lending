@@ -5,12 +5,18 @@
 @import 'global';
 @import 'icons';
 
+// modules
+
 @import '../modules/hero/hero';
 @import '../modules/museum/museum';
 @import '../modules/events/events';
+@import '../modules/galery/galery';
+@import '../modules/galery-slider/galery-slider';
 
 // components
+
 @import '../modules/components/footer/footer';
 @import '../modules/components/header/header';
-@import '../modules/components/slides/slides';
+@import '../modules/components/card-events/card-events';
+@import '../modules/components/card-galery-slider/card-galery-slider';
 @import '../modules/components/swiperjs/swiperjs';

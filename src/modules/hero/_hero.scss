@@ -1,9 +1,7 @@
 .hero {
-  // max-height: 98rem;
-  // height: 100%;
   &__inner {
     height: 98rem;
-    @include bg-image('../../../assets/images/hero/hero-bg.png');
+    @include bg-image('../../../assets/images/hero/hero-bg.webp');
   }
 
   &__title {
