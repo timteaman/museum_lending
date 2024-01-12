@@ -30,11 +30,18 @@
       max-width: 19rem;
       top: -1.4rem;
     }
+
+    @include r($r-md) {
+      font-size: 5rem;
+    }
   }
 
   &__link {
     font-size: 2.2rem;
     position: relative;
+    transition: transform 0.5s, color 0.5s;
+    margin-right: 1rem;
+    text-align: center;
 
     &::before {
       content: '';
@@ -47,6 +54,36 @@
       border: 1px solid var(--pure-white);
       border-radius: 50%;
       transform: translate(-50%, -50%);
+      transition: box-shadow 0.5s, background-color 0.5s, border-color 0.5s;
+      z-index: -1;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+
+      &::before {
+        box-shadow: 0 0 10px var(--pure-white);
+      }
+    }
+
+    &:focus {
+      &::before {
+        background-color: var(--graphite);
+        border-color: var(--medium-gray);
+      }
+    }
+
+    &:active {
+      color: var(--dusty-white);
+
+      &::before {
+        background-color: var(--graphite);
+        border-color: var(--slate-gray);
+      }
+    }
+
+    @include r($r-md) {
+      font-size: 1.8rem;
     }
   }
 

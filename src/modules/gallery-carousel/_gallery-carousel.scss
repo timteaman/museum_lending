@@ -19,6 +19,10 @@
 
   &__wrapper {
     margin-bottom: 10rem;
+
+    @include r($r-sm) {
+      margin-bottom: 4rem;
+    }
   }
 
 }

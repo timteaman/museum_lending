@@ -2,37 +2,37 @@
   {
     "cardGalleryClass": "gallery-carousel__item",
     "cardGalleryClassActive": "gallery-carousel__item--active",
-    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide1.jpg",
+    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide1.webp",
     "cardGalleryAlt": ""
   },
   {
     "cardGalleryClass": "gallery-carousel__item",
     "cardGalleryClassActive": "gallery-carousel__item--active",
-    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide2.jpg",
+    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide2.webp",
     "cardGalleryAlt": ""
   },
   {
     "cardGalleryClass": "gallery-carousel__item",
     "cardGalleryClassActive": "gallery-carousel__item--active",
-    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide3.jpg",
+    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide3.webp",
     "cardGalleryAlt": ""
   },
   {
     "cardGalleryClass": "gallery-carousel__item",
     "cardGalleryClassActive": "gallery-carousel__item--active",
-    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide1.jpg",
+    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide1.webp",
     "cardGalleryAlt": ""
   },
   {
     "cardGalleryClass": "gallery-carousel__item",
     "cardGalleryClassActive": "gallery-carousel__item--active",
-    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide2.jpg",
+    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide2.webp",
     "cardGalleryAlt": ""
   },
   {
     "cardGalleryClass": "gallery-carousel__item",
     "cardGalleryClassActive": "gallery-carousel__item--active",
-    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide3.jpg",
+    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide3.webp",
     "cardGalleryAlt": ""
   }
 ]

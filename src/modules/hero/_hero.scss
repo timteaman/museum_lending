@@ -17,12 +17,12 @@
     }
 
     &::before {
-      @include bg-image('../assets/icons/ellipse-big.svg', cover);
+      @include bg-image('../assets/icons/sprite.svg#ellipse-big', cover);
       background-position: center calc(1% + 4rem);
     }
 
     &::after {
-      @include bg-image('../assets/icons/ellipse-big.svg', cover);
+      @include bg-image('../assets/icons/sprite.svg#ellipse-big', cover);
       background-position: center calc(1% + 4rem);
       filter: blur(10px);
     }
@@ -53,6 +53,14 @@
       left: 50%;
       transform: translate(-50%, -50%);
       background: linear-gradient(70deg, #111 15.93%, rgba(0, 0, 0, 0) 115.05%);
+    }
+
+    @include r($r-md) {
+      font-size: 7rem;
+    }
+
+    @include r($r-xs) {
+      font-size: 5rem;
     }
   }
 }

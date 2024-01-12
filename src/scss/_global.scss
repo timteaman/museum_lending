@@ -1,5 +1,6 @@
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -24,7 +25,7 @@ body {
   flex-direction: column;
 
   &--height {
-    padding-top: 9.6rem;
+    padding-top: 11rem;
   }
 }
 
@@ -40,6 +41,10 @@ body {
 
 .section {
   padding: 0 0 10rem 0;
+
+  // @include r($r-md) {
+  //   padding: 0 0 5rem 0;
+  // }
 }
 
 .logo {
@@ -51,7 +56,9 @@ body {
   padding: 1rem;
 
   &__text {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     max-width: 5.8rem;
     text-transform: uppercase;
     text-align: center;
@@ -64,36 +71,45 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 25px 0px !important;
+  padding: 0 0px !important;
   background-color: var(--dark-charcoal);
   transition: background-color 0.4s;
 }
 
-// .logo {
-//     border-radius: 5px;
-//     transition: opacity 0.3s, outline 0.3s;
-//     outline-offset: 3px;
+.logo {
+  border-radius: 5px;
+  transition: opacity 0.3s, outline 0.3s;
+  outline-offset: 3px;
 
-//     &:hover {
-//         opacity: 0.7;
-//     }
+  &:hover {
+    opacity: 0.7;
+  }
 
-//     &:focus {
-//         outline: 2px solid rgba($orange-900, 0.70);
-//     }
+  &:focus {
+    outline: 2px solid var(--ash-gray);
+  }
 
-//     &:active {
-//         opacity: 0.5;
-//     }
-// }
+  &:active {
+    opacity: 0.5;
+  }
+}
 
-// .title {
-//     font-weight: 500;
-//     font-size: 36px;
-//     color: $darkBlue-900;
-//     margin-bottom: 60px;
-//     text-align: center;
-// }
+.link {
+  outline: 2px solid transparent;
+  transition: color 0.4s, outline-color 0.4s;
+
+  &:hover {
+    color: var(--silver-gray);
+  }
+
+  &:focus {
+    outline-color: var(--ash-gray);
+  }
+
+  &:active {
+    color: var(--slate-gray);
+  }
+}
 
 .sr-only {
   position: absolute;
@@ -106,6 +122,22 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.lock {
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--graphite-transparent);
+  }
 }
 
 .link-icon {

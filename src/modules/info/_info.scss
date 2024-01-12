@@ -25,7 +25,6 @@
   }
 
   &__item {
-    cursor: pointer;
 
     &>:not(.info__subtitle) {
       visibility: hidden;
@@ -48,18 +47,39 @@
   }
 
   &__subtitle {
-    font-size: 2.3rem;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
     gap: 10rem;
     margin-bottom: 2rem;
+    font-size: 2.3rem;
+    outline: 2px solid transparent;
+    cursor: pointer;
+    transition: color 0.5s;
+
 
     &::before {
       mask-size: cover;
       width: 4rem;
       height: 4rem;
+    }
+
+    &:hover {
+      color: var(--gray);
+      transition: background-color 0.5s;
+
+      &::before {
+        background-color: var(--gray);
+      }
+    }
+
+    &:focus {
+      outline-color: var(--ashen-gray);
+    }
+
+    &:active {
+      color: var(--light-gray);
     }
 
   }

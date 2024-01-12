@@ -47,9 +47,15 @@
     }
   }
 
-  &--group2 {
+  &--burger-open {
     &::before {
-      mask-image: url('../assets/icons/group2.svg');
+      mask-image: url('../assets/icons/sprite.svg#burger-menu');
+    }
+  }
+
+  &--burger-close {
+    &::before {
+      mask-image: url('../assets/icons/sprite.svg#burger-close');
     }
   }
 }

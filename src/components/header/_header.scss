@@ -8,27 +8,81 @@
   justify-content: center;
   gap: 6rem;
 
+  @include r($r-md) {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
   &__list {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 3.6rem;
+
+    @include r($r-md) {
+      display: none;
+    }
   }
 
   &__link {
     padding: 0.2rem;
     text-transform: uppercase;
-    outline: 2px solid transparent;
-    transition: color 0.4s, outline-color 0.4s;
-
-    &:hover {
-      color: var(--silver-gray);
-    }
-
-    &:focus {
-      color: var(--slate-gray);
-    }
-
-    &:active {
-      outline-color: var(--ash-gray);
-    }
   }
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  border: none;
+  outline: none;
+  font-size: 40px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  transform-style: preserve-3d;
+  position: relative;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: attr(title);
+  position: absolute;
+  padding: 15px 40px;
+  left: 0;
+  top: 0;
+  background: #fff;
+  color: #000;
+  border: 3px solid #000;
+  transition: .5s;
+  transform-origin: right;
+  transform: translateX(-100%) rotateY(90deg);
+}
+
+.btn::after {
+  content: attr(title);
+  position: absolute;
+  padding: 15px 40px;
+  left: 0;
+  top: 0;
+  background: #000;
+  color: #fff;
+  border: 3px solid #000;
+  transition: .5s;
+  transform-origin: left;
+  transform: translateX(0) rotateY(0deg);
+}
+
+.btn:hover::before {
+  transform: translateX(0) rotateY(0deg);
+}
+
+.btn:hover::after {
+  transform: translateX(100%) rotateY(90deg);
 }

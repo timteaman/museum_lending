@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    Museum | Art collection
+    Stone Museum | Art collection
   </title>
 
   <link href="../assets/icons/favicon/favicon.ico" rel="icon" sizes="48x48">
@@ -22,7 +22,7 @@
 
   <div class="wrapper">
 
-    <header class="header fixed" id="header">
+    <header class="header" id="header">
 
   <div class="container">
 
@@ -31,53 +31,136 @@
       <ul class="menu__list">
 
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link link" href="#">
             home
           </a>
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">
-            events
+          <a class="menu__link link" href="#museum">
+            history
           </a>
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">
-            gallery
+          <a class="menu__link link" href="#events">
+            events
           </a>
         </li>
 
       </ul>
 
-      <a class="logo" href="#">
+      <a class="logo" href="#header">
 
         <img class="logo__img" src="./assets/icons/logo.svg" alt="museum logo" width="36" height="46">
-        <span class="logo__text">uxmcs museum</span>
+
+        <span class="logo__text">
+          Stone
+          <span class="logo__text--down">
+            Essence
+          </span>
+        </span>
 
       </a>
 
       <ul class="menu__list">
 
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link link" href="#gallery">
+            gallery
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link link" href="#info">
             updates
           </a>
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">
-            history
-          </a>
-        </li>
-
-        <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link link" href="#footer">
             contact
           </a>
         </li>
 
       </ul>
+
+      <div class="mobile-menu">
+
+  <button class="burger icon icon--burger-open" type="button">
+    <span class="sr-only">
+      Open mobile menu
+    </span>
+  </button>
+
+  <nav class="mobile-menu__nav">
+
+    <div class="mobile-menu__header">
+
+      <a class="logo" href="#header">
+
+        <img class="logo__img" src="./assets/icons/logo.svg" alt="museum logo" width="36" height="46">
+
+        <span class="logo__text">
+          Stone
+          <span class="logo__text--down">
+            Essence
+          </span>
+        </span>
+
+      </a>
+
+      <button class="burger__close icon icon--burger-close" type="button">
+        <span class="sr-only">
+          Close mobile menu
+        </span>
+      </button>
+
+    </div>
+
+    <ul class="menu__list mobile-menu__list">
+
+      <li class="menu__item mobile-menu__item">
+        <a class="menu__link mobile-menu__link link" href="#">
+          home
+        </a>
+      </li>
+
+      <li class="menu__item mobile-menu__item">
+        <a class="menu__link mobile-menu__link link" href="#museum">
+          history
+        </a>
+      </li>
+
+      <li class="menu__item mobile-menu__item">
+        <a class="menu__link mobile-menu__link link" href="#events">
+          events
+        </a>
+      </li>
+
+      <li class="menu__item mobile-menu__item">
+        <a class="menu__link mobile-menu__link link" href="#gallery">
+          gallery
+        </a>
+      </li>
+
+      <li class="menu__item mobile-menu__item">
+        <a class="menu__link mobile-menu__link link" href="#info">
+          updates
+        </a>
+      </li>
+
+      <li class="menu__item mobile-menu__item">
+        <a class="menu__link mobile-menu__link link" href="#footer">
+          contact
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</div>
 
     </nav>
 
@@ -105,7 +188,7 @@
 
 </section>
 
-        <section class="museum section">
+        <section class="museum section" id="museum">
 
   <div class="museum__inner">
 
@@ -139,15 +222,20 @@
       </p>
     </div>
 
-    <a class="museum__link museum__item5 link-icon" href="#">
-      Know More
-    </a>
+    <div class="museum__link museum__cube museum__item5">
+      <span class="museum__cube--first">
+        <a class="museum__cube-text" href="#">Know More</a>
+      </span>
+      <span class="museum__cube--second">
+        <a class="museum__cube-text" href="#">About us</a>
+      </span>
+    </div>
 
   </div>
 
 </section>
 
-        <section class="events section">
+        <section class="events section" id="events">
 
   <div class="events__header">
 
@@ -190,7 +278,7 @@
 
     <div class="card-events__wrapper">
 
-      <a class="card-events__link" href="#">
+      <a class="card-events__link link" href="#">
         Know More
       </a>
 
@@ -228,7 +316,7 @@
 
     <div class="card-events__wrapper">
 
-      <a class="card-events__link" href="#">
+      <a class="card-events__link link" href="#">
         Know More
       </a>
 
@@ -266,7 +354,7 @@
 
     <div class="card-events__wrapper">
 
-      <a class="card-events__link" href="#">
+      <a class="card-events__link link" href="#">
         Know More
       </a>
 
@@ -304,7 +392,7 @@
 
     <div class="card-events__wrapper">
 
-      <a class="card-events__link" href="#">
+      <a class="card-events__link link" href="#">
         Know More
       </a>
 
@@ -342,7 +430,7 @@
 
     <div class="card-events__wrapper">
 
-      <a class="card-events__link" href="#">
+      <a class="card-events__link link" href="#">
         Know More
       </a>
 
@@ -393,7 +481,7 @@
 
 </section>
 
-        <section class="gallery section">
+        <section class="gallery section" id="gallery">
 
   <div class="gallery__inner">
 
@@ -437,37 +525,37 @@
         <li class="swiper-slide gallery-carousel__item gallery-carousel__item--active">
 
   <article class="card-gallery">
-    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide1.jpg" alt="">
+    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide1.webp" alt="">
   </article>
 
 </li><li class="swiper-slide gallery-carousel__item gallery-carousel__item--active">
 
   <article class="card-gallery">
-    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide2.jpg" alt="">
+    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide2.webp" alt="">
   </article>
 
 </li><li class="swiper-slide gallery-carousel__item gallery-carousel__item--active">
 
   <article class="card-gallery">
-    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide3.jpg" alt="">
+    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide3.webp" alt="">
   </article>
 
 </li><li class="swiper-slide gallery-carousel__item gallery-carousel__item--active">
 
   <article class="card-gallery">
-    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide1.jpg" alt="">
+    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide1.webp" alt="">
   </article>
 
 </li><li class="swiper-slide gallery-carousel__item gallery-carousel__item--active">
 
   <article class="card-gallery">
-    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide2.jpg" alt="">
+    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide2.webp" alt="">
   </article>
 
 </li><li class="swiper-slide gallery-carousel__item gallery-carousel__item--active">
 
   <article class="card-gallery">
-    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide3.jpg" alt="">
+    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide3.webp" alt="">
   </article>
 
 </li>
@@ -511,14 +599,14 @@
 
 </section>
 
-        <section class="info section">
+        <section class="info section" id="info">
 
   <div class="info__inner">
 
     <h2 class="info__title">
       FAQs
       <span class="info__title--text">
-        UXmCS Museum
+        Stone Essence museum
       </span>
 
     </h2>
@@ -622,7 +710,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
   <div class="container">
     <div class="footer__box">
       <div class="footer__inner">
@@ -632,40 +720,42 @@
           <img class="logo__img" src="./assets/icons/logo.svg" alt="museum logo" width="36" height="46">
 
           <span class="logo__text">
-            uxmcs museum
-          </span>
+            Stone
+            <span class="logo__text--down">
+              Essence
+            </span>
 
         </a>
 
         <ul class="footer__list">
 
           <li class="footer__item">
-            <a class="footer__link" href="#">
+            <a class="footer__link link" href="#">
               home
             </a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">
+            <a class="footer__link link" href="#info">
               updates
             </a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">
+            <a class="footer__link link" href="#events">
               events
             </a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">
+            <a class="footer__link link" href="#museum">
               history
             </a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">
+            <a class="footer__link link" href="#gallery">
               gallery
             </a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">
+            <a class="footer__link link" href="#footer">
               contact
             </a>
           </li>

@@ -48,6 +48,10 @@
       background-color: var(--silver-gray);
       z-index: -1;
     }
+
+    // @include r($r-md) {
+    //   font-size: 7rem;
+    // }
   }
 
   &__img-wrapper {
@@ -92,12 +96,12 @@
     }
 
     &::before {
-      @include bg-image('../assets/icons/elipse-sm.svg', contain);
+      @include bg-image('../assets/icons/sprite.svg#elipse-sm', contain);
       background-position: center;
     }
 
     &::after {
-      @include bg-image('../assets/icons/elipse-sm.svg', contain);
+      @include bg-image('../assets/icons/sprite.svg#elipse-sm', contain);
       background-position: center;
       filter: blur(10px);
     }
@@ -129,22 +133,50 @@
   }
 
   &__link {
-    display: flex;
-    width: fit-content;
-    align-items: center;
-    grid-column: 2;
-    font-family: 'Bellefair';
-    font-size: 3.3rem;
+    text-align: center;
+    height: 6rem;
     text-transform: uppercase;
-    position: relative;
-    padding: 4.2rem;
+    font-size: 3.3rem;
+    cursor: pointer;
+  }
 
-    &::before {
-      width: 12rem;
-      height: 12rem;
-      left: 6rem;
+  &__cube {
+    transition: transform 0.33s;
+    transform-style: preserve-3d;
+
+    &:hover {
+      transform: rotateX(89deg);
+    }
+
+    &:focus {
+      box-shadow: 0 0 10px var(--pure-white);
+    }
+
+    &:active {
+      color: var(--graphite);
     }
   }
+
+  &__cube--first,
+  &__cube--second {
+    height: 6rem;
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+
+  &__cube--first {
+    padding-bottom: 2rem;
+    border-bottom: 4px solid var(--silver-gray);
+    transform: translateZ(3rem);
+  }
+
+  &__cube--second {
+    border-top: 4px solid var(--silver-gray);
+    padding-top: 2rem;
+    transform: rotateX(-90deg) translateZ(-3rem);
+  }
+
 }
 
 .museum__item1 {
@@ -165,5 +197,4 @@
 
 .museum__item5 {
   grid-area: item5;
-  margin-left: 12rem;
 }

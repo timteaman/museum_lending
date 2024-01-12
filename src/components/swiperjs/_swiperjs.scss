@@ -7,41 +7,28 @@
   &__btn {
     background-color: var(--silver-gray);
     border-radius: 50%;
-    outline: 2px solid transparent;
+    outline: 3px solid transparent;
     width: 7rem;
     height: 7rem;
-    transition: background-color 0.4s, outline-color 0.4s;
+    transition: outline-color 0.5s ease-in-out, background-color 0.5s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    // &:hover {
-    //   // border-color: rgba($orange-900, 0.5);
-    //   // background-color: $orangeLight;
-
-    //   &::before {
-    //     // background-color: rgba($orange-900, 0.5);
-    //   }
-    // }
-
-    // &:focus {
-    //   // outline-color: $orange-900;
-    // }
-
-    // &:active {
-    //   // background-color: $orangeLight;
-    //   // border-color: transparent;
-
-    //   &::before {
-    //     // background-color: $orange-900;
-    //   }
-    // }
 
     &::before {
       mask-size: cover;
       width: 1.8rem;
       height: 1.8rem;
       background-color: var(--pure-white);
+    }
+
+    &:focus {
+      outline-color: var(--pure-white);
+    }
+
+    &:active {
+      outline-color: var(--ashen-gray);
+      background-color: var(--jet-black);
     }
   }
 
@@ -55,27 +42,9 @@
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    // background-color: $gray;
     outline: 2px solid transparent;
     cursor: pointer;
     transition: outline-color 0.4s, background-color 0.4s;
-
-    &--active {
-      // background-color: $orange-900;
-    }
-
-    // &:hover {
-    //   outline-color: rgba($orange-900, 0.5);
-    //   background-color: $orangeLight;
-    // }
-
-    // &:focus {
-    //   outline-color: $orange-900;
-    // }
-
-    // &:active {
-    //   background-color: rgba($orange-900, 0.5);
-    // }
   }
 }
 
@@ -99,6 +68,18 @@
   &__scrollbar-drag {
     background-color: var(--pure-white);
     border-radius: 5rem;
+  }
+
+  &__btn {
+    &:hover {
+      outline-color: var(--ashen-gray);
+      background-color: var(--dusty-white);
+      transition: background-color 0.4s;
+
+      &::before {
+        background-color: var(--jet-black);
+      }
+    }
   }
 }
 
@@ -129,10 +110,15 @@
 
   &__btn {
     background-color: transparent;
+    transition: transform 0.5s ease-in-out;
 
     &::before {
       width: 5.8rem;
       height: 5.8rem;
+    }
+
+    &:hover {
+      transform: scale(1.7);
     }
   }
 }
