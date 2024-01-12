@@ -6,7 +6,7 @@
     min-width: 2.4rem;
     height: 2.4rem;
     mask-repeat: no-repeat;
-    mask-size: contain;
+    mask-size: cover;
     mask-position: center;
     transition: background-color 0.3s, color 0.3s, outline-color 0.3s;
   }
@@ -44,6 +44,12 @@
   &--chevronsmall-right {
     &::before {
       mask-image: url('../assets/icons/sprite.svg#chevronsmall-right');
+    }
+  }
+
+  &--group2 {
+    &::before {
+      mask-image: url('../assets/icons/group2.svg');
     }
   }
 }

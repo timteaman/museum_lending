@@ -1,15 +1,15 @@
 .events {
-  &__top {
+
+  &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 6.5rem;
-    padding-top: 15.2rem;
+    margin-bottom: 6.4rem;
   }
+
   &__title {
     font-size: 7.2rem;
     position: relative;
-    padding: 1.3rem 0 2.3rem 0;
 
     &::before,
     &::after {
@@ -20,10 +20,12 @@
       width: 100%;
       left: 0;
     }
+
     &::before {
       max-width: 73rem;
       bottom: -2.2rem;
     }
+
     &::after {
       max-width: 19rem;
       top: -1.4rem;
@@ -41,10 +43,14 @@
       left: 50%;
       width: max-content;
       height: max-content;
-      padding: 4rem;
+      padding: 5rem;
       border: 1px solid var(--pure-white);
       border-radius: 50%;
       transform: translate(-50%, -50%);
     }
+  }
+
+  &__wrapper {
+    margin-bottom: 4rem;
   }
 }

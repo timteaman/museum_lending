@@ -1,0 +1,138 @@
+.slider-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5px;
+
+  &__btn {
+    background-color: var(--silver-gray);
+    border-radius: 50%;
+    outline: 2px solid transparent;
+    width: 7rem;
+    height: 7rem;
+    transition: background-color 0.4s, outline-color 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // &:hover {
+    //   // border-color: rgba($orange-900, 0.5);
+    //   // background-color: $orangeLight;
+
+    //   &::before {
+    //     // background-color: rgba($orange-900, 0.5);
+    //   }
+    // }
+
+    // &:focus {
+    //   // outline-color: $orange-900;
+    // }
+
+    // &:active {
+    //   // background-color: $orangeLight;
+    //   // border-color: transparent;
+
+    //   &::before {
+    //     // background-color: $orange-900;
+    //   }
+    // }
+
+    &::before {
+      mask-size: cover;
+      width: 1.8rem;
+      height: 1.8rem;
+      background-color: var(--pure-white);
+    }
+  }
+
+  &__dots {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  &__dot {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    // background-color: $gray;
+    outline: 2px solid transparent;
+    cursor: pointer;
+    transition: outline-color 0.4s, background-color 0.4s;
+
+    &--active {
+      // background-color: $orange-900;
+    }
+
+    // &:hover {
+    //   outline-color: rgba($orange-900, 0.5);
+    //   background-color: $orangeLight;
+    // }
+
+    // &:focus {
+    //   outline-color: $orange-900;
+    // }
+
+    // &:active {
+    //   background-color: rgba($orange-900, 0.5);
+    // }
+  }
+}
+
+.events-slider {
+  &__actions {
+    justify-content: space-between;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__bar {
+    width: 30rem !important;
+    height: 2rem;
+    background-color: var(--slate-gray);
+    border-radius: 5rem;
+  }
+
+  &__scrollbar-drag {
+    background-color: var(--pure-white);
+    border-radius: 5rem;
+  }
+}
+
+.gallery-slider {
+
+  &__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  &__bar {
+    width: 12rem !important;
+    height: 0.5rem;
+    background-color: var(--slate-gray);
+    border-radius: 5rem;
+  }
+
+  &__scrollbar-drag {
+    background-color: var(--pure-white);
+    border-radius: 5rem;
+  }
+
+  &__btn {
+    background-color: transparent;
+
+    &::before {
+      width: 5.8rem;
+      height: 5.8rem;
+    }
+  }
+}

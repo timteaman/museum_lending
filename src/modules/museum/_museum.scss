@@ -1,9 +1,9 @@
 .museum {
+
   &__inner {
     display: grid;
-    grid-template-columns: 500px 1fr;
-    grid-template-rows: repeat(6, 227px);
-
+    grid-template-columns: minmax(0, 470px) 1fr;
+    grid-template-rows: repeat(6, auto);
     grid-template-areas:
       '... item2'
       'item1 item2'
@@ -11,30 +11,103 @@
       'item1 item2'
       'item3 item4'
       'item3 item5';
+    position: relative;
   }
 
   &__title {
     grid-row: span 2;
     display: flex;
     align-items: center;
-    max-width: 55.6rem;
-    width: 100%;
+    width: fit-content;
     font-family: 'Bellefair';
     font-size: 10.8rem;
     text-transform: uppercase;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-right: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      height: 2px;
+      width: 100%;
+      background-color: var(--silver-gray);
+      transform: translate(-50%, -20%);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 2px;
+      max-height: 82rem;
+      height: 100%;
+      background-color: var(--silver-gray);
+      z-index: -1;
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 15%;
+      right: 0;
+      max-width: 83rem;
+      width: 100%;
+      height: 2px;
+      background-color: var(--silver-gray);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 83rem;
+      width: 2px;
+      max-height: 90rem;
+      height: 100%;
+      background-color: var(--silver-gray);
+    }
+  }
+
+  &__img-box {
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 5%;
+      right: 15%;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+
+    &::before {
+      @include bg-image('../assets/icons/elipse-sm.svg', contain);
+      background-position: center;
+    }
+
+    &::after {
+      @include bg-image('../assets/icons/elipse-sm.svg', contain);
+      background-position: center;
+      filter: blur(10px);
+    }
   }
 
   &__img {
-    grid-column: 2 / 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    max-width: 73.5rem;
-    width: 100%;
-    max-height: 87.5rem;
-    height: 100%;
+    margin-bottom: 5.2rem;
   }
 
-  &__text > p {
+  &__text>p {
     max-width: 44.2rem;
     width: 100%;
     font-family: 'Poppins';
@@ -43,16 +116,22 @@
     line-height: 1.4;
   }
 
-  &__text--second > p {
+  &__text--second>p {
     max-width: 81rem;
     width: 100%;
     font-family: 'Poppins';
     font-size: 2.4rem;
     line-height: 1.6;
     font-weight: 300;
+    margin-bottom: 3.2rem;
+    background-color: var(--jet-black);
+    padding-left: 2rem;
   }
 
   &__link {
+    display: flex;
+    width: fit-content;
+    align-items: center;
     grid-column: 2;
     font-family: 'Bellefair';
     font-size: 3.3rem;
@@ -61,16 +140,9 @@
     padding: 4.2rem;
 
     &::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       width: 12rem;
       height: 12rem;
-      border-radius: 50%;
-      z-index: -1;
-      background-color: var(--ashen-gray);
+      left: 6rem;
     }
   }
 }
@@ -78,15 +150,20 @@
 .museum__item1 {
   grid-area: item1;
 }
+
 .museum__item2 {
   grid-area: item2;
 }
+
 .museum__item3 {
   grid-area: item3;
 }
+
 .museum__item4 {
   grid-area: item4;
 }
+
 .museum__item5 {
   grid-area: item5;
+  margin-left: 12rem;
 }

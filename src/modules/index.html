@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@include('./components/head/_head.html', {'title': 'Museum | Art collection'})
+@include('../components/head/_head.html', {'title': 'Museum | Art collection'})
 
 <body>
 
   <div class="wrapper">
-    @include('./components/header/_header.html')
+
+    @include('../components/header/_header.html')
 
     <main class="main">
+
       <div class="container">
 
         @include('./hero/_hero.html')
@@ -17,14 +19,17 @@
 
         @include('./events/_events.html')
 
-        @include('./galery/_galery.html')
+        @include('./gallery/_gallery.html')
 
-        <!-- @include('./galery-slider/_galery-slider.html') -->
+        @include('./gallery-carousel/_gallery-carousel.html')
+
+        @include('./info/_info.html')
 
       </div>
+
     </main>
 
-    @include('./components/footer/_footer.html')
+    @include('../components/footer/_footer.html')
 
   </div>
 

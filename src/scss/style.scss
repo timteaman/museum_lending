@@ -10,13 +10,14 @@
 @import '../modules/hero/hero';
 @import '../modules/museum/museum';
 @import '../modules/events/events';
-@import '../modules/galery/galery';
-@import '../modules/galery-slider/galery-slider';
+@import '../modules/gallery/gallery';
+@import '../modules/info/info';
+@import '../modules/gallery-carousel/gallery-carousel';
 
 // components
 
-@import '../modules/components/footer/footer';
-@import '../modules/components/header/header';
-@import '../modules/components/card-events/card-events';
-@import '../modules/components/card-galery-slider/card-galery-slider';
-@import '../modules/components/swiperjs/swiperjs';
+@import '../components/footer/footer';
+@import '../components/header/header';
+@import '../components/cards/card-gallery/card-gallery';
+@import '../components/cards/card-events/card-events';
+@import '../components/swiperjs/swiperjs';

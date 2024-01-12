@@ -12,7 +12,7 @@ body {
   @include fontFamily('Baskervville');
   font-style: normal;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: normal;
   color: var(--pure-white);
   background-color: var(--jet-black);
@@ -22,6 +22,10 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+
+  &--height {
+    padding-top: 9.6rem;
+  }
 }
 
 .main {
@@ -32,6 +36,10 @@ body {
   max-width: 128rem;
   padding: 0 1.5rem;
   margin: 0 auto;
+}
+
+.section {
+  padding: 0 0 10rem 0;
 }
 
 .logo {
@@ -50,20 +58,16 @@ body {
   }
 }
 
-.section {
-  padding: 0 0 10rem 0;
+.fixed {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 0px !important;
+  background-color: var(--dark-charcoal);
+  transition: background-color 0.4s;
 }
-
-// .fixed {
-//     z-index: 99;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     padding: 25px 0px !important;
-//     background-color: $peorpleLight;
-//     transition: background-color 0.4s;
-// }
 
 // .logo {
 //     border-radius: 5px;
@@ -102,4 +106,22 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.link-icon {
+  position: relative;
+  display: flex;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: 9.5rem;
+    height: 9.5rem;
+    border-radius: 50%;
+    background-color: var(--ashen-gray);
+    z-index: -1;
+  }
 }

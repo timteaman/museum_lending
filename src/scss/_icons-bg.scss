@@ -1,0 +1,9 @@
+.bg-icon {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--wavy-line {
+    background-image: url('../assets/images/our-product/statue1.webp');
+  }
+}

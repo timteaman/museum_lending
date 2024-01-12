@@ -1,0 +1,87 @@
+.card-events {
+  display: flex;
+  align-items: flex-end;
+  padding: 2.7rem 10rem 2.7rem 2.7rem;
+  gap: 2rem;
+  height: 63.6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 62.8rem;
+    width: 100%;
+    gap: 1.4rem;
+  }
+
+  &__subtitle {
+    font-family: 'Bellefair';
+    font-size: 3rem;
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      top: 50%;
+      left: -3rem;
+      transform: translateY(-50%);
+      width: 1.6rem;
+      height: 1.6rem;
+      background-color: var(--dusty-white);
+      border: 3px solid var(--ashen-gray);
+    }
+  }
+
+  &__date {
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: 'Poppins';
+    max-width: 62.8rem;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__number {
+    font-family: 'Bellefair';
+    font-size: 6.8rem;
+    text-transform: uppercase;
+    color: var(--light-gray);
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8.5rem;
+    font-size: 2rem;
+  }
+
+  &__book {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 4.6rem;
+      height: 4.6rem;
+      background-color: var(--graphite);
+      border-radius: 50%;
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+  }
+}

@@ -30,18 +30,18 @@ ol,
 li,
 figure,
 figcaption,
-blockquote
-{
+blockquote {
     margin: 0;
     font: inherit;
 }
 
 label {
-    // display: inline-block;
+    display: inline-block;
     font: inherit;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 

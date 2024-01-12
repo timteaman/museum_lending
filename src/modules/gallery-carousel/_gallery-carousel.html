@@ -1,0 +1,48 @@
+<section class="gallery-carousel section">
+
+  <div class="gallery-carousel__inner">
+
+    <div class="swiper gallery-slider gallery-carousel__wrapper">
+
+      <ul class="swiper-wrapper gallery-carousel__list">
+        @loop('../../components/cards/card-gallery/_card-gallery.html',
+        '../components/cards/card-gallery/card-gallery.json')
+      </ul>
+
+    </div>
+
+    <div class="slider-actions gallery-slider__actions">
+
+      <div class="swiper-progress-bar gallery-slider__bar">
+        <div class="swiper-scrollbar-drag gallery-slider__scrollbar-drag"></div>
+      </div>
+
+      <div class="gallery-slider__inner">
+
+        <button
+          class="slider-actions__btn slider-actions__btn--prev gallery-slider__btn gallery-slider__btn--prev icon icon--chevronsmall-left"
+          type="button">
+
+          <span class="sr-only">
+            Flip the slide left
+          </span>
+
+        </button>
+
+        <button
+          class="slider-actions__btn slider-actions__btn--next gallery-slider__btn gallery-slider__btn--next icon icon--chevronsmall-right"
+          type="button">
+
+          <span class="sr-only">
+            Flip the slide right
+          </span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

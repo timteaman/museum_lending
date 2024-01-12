@@ -1,0 +1,38 @@
+[
+  {
+    "cardGalleryClass": "gallery-carousel__item",
+    "cardGalleryClassActive": "gallery-carousel__item--active",
+    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide1.jpg",
+    "cardGalleryAlt": ""
+  },
+  {
+    "cardGalleryClass": "gallery-carousel__item",
+    "cardGalleryClassActive": "gallery-carousel__item--active",
+    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide2.jpg",
+    "cardGalleryAlt": ""
+  },
+  {
+    "cardGalleryClass": "gallery-carousel__item",
+    "cardGalleryClassActive": "gallery-carousel__item--active",
+    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide3.jpg",
+    "cardGalleryAlt": ""
+  },
+  {
+    "cardGalleryClass": "gallery-carousel__item",
+    "cardGalleryClassActive": "gallery-carousel__item--active",
+    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide1.jpg",
+    "cardGalleryAlt": ""
+  },
+  {
+    "cardGalleryClass": "gallery-carousel__item",
+    "cardGalleryClassActive": "gallery-carousel__item--active",
+    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide2.jpg",
+    "cardGalleryAlt": ""
+  },
+  {
+    "cardGalleryClass": "gallery-carousel__item",
+    "cardGalleryClassActive": "gallery-carousel__item--active",
+    "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide3.jpg",
+    "cardGalleryAlt": ""
+  }
+]

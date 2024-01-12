@@ -28,11 +28,14 @@ function browsersync() {
 function watching() {
   watch(['./src/scss/**/*.scss'], styles);
   watch(['./src/modules/**/*.scss'], styles);
+  watch(['./src/components/**/*.scss'], styles);
   watch(['./src/js/**/*.js']).on('change', browserSync.reload);
   watch(['./src/**/*.html']).on('change', browserSync.reload);
   watch(['./src/modules/**/*.html']).on('change', browserSync.reload);
+  watch(['./src/components/**/*.html']).on('change', browserSync.reload);
   watch(['./src/images/icons/*.svg'], svgSprites);
   watch(['./src/modules/**/*.html'], htmlInclude);
+  watch(['./src/components/**/*.html'], htmlInclude);
 }
 
 function styles() {
@@ -86,14 +89,14 @@ function images() {
 }
 
 const htmlInclude = () => {
-  return src(['./src/modules/*.html']) // Выбираем только файлы .html внутри папки "src/modules"
+  return src(['./src/modules/*.html', './src/components/*.html'])
     .pipe(
       fileInclude({
         prefix: '@',
         basepath: '@file',
       })
     )
-    .pipe(dest('./src')) // указываем, в какую папку поместить готовый файл html
+    .pipe(dest('./src'))
     .pipe(browserSync.stream());
 };
 
@@ -116,17 +119,17 @@ function cleanDist() {
 }
 
 function svgSprites() {
-  return src('./src/assets/icons/sprites/**/*.svg') // выбираем в папке с иконками все файлы с расширением svg
+  return src('./src/assets/icons/sprites/**/*.svg')
     .pipe(
       svgSprite({
         mode: {
           stack: {
-            sprite: '../sprite.svg', // указываем имя файла спрайта и путь
+            sprite: '../sprite.svg',
           },
         },
       })
     )
-    .pipe(dest('./src/assets/icons')); // указываем, в какую папку поместить готовый файл спрайта
+    .pipe(dest('./src/assets/icons'));
 }
 
 exports.styles = styles;
