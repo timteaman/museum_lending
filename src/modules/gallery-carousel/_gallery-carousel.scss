@@ -19,6 +19,7 @@
 
   &__wrapper {
     margin-bottom: 10rem;
+    height: 80rem;
 
     @include r($r-sm) {
       margin-bottom: 4rem;

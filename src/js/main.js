@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     speed: 1000,
     slidesPerView: 3,
+    slidesPerView: window.innerWidth <= 992 ? 1 : 3,
   });
 
   // show and hide info block- content
