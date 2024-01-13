@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenu = document.querySelector('.mobile-menu__nav');
   const bodyLock = document.querySelector('body');
   const closeBtn = document.querySelector('.burger__close');
+  const menuLink = document.querySelectorAll('.mobile-menu__link');
 
   burger.addEventListener('click', () => {
     burger.classList.add('burger--active');
@@ -93,13 +94,20 @@ document.addEventListener('DOMContentLoaded', () => {
     bodyLock.classList.add('lock');
   });
 
-  closeBtn.addEventListener('click', () => {
+  closeBtn.addEventListener('click', closeMenu);
+
+  menuLink.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  function closeMenu() {
     burger.classList.remove('burger--active');
     mobileMenu.classList.remove('mobile-menu__nav--active');
     bodyLock.classList.remove('lock');
-  });
+  }
 
   // Off-target click
+
   document.addEventListener('click', function (e) {
     if (
       !e.target.closest('.burger') &&

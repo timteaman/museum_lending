@@ -16,7 +16,7 @@
     text-transform: uppercase;
   }
 
-  &__wrapper {
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 4.4rem;
@@ -85,6 +85,20 @@
   }
 
   &__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     font-size: 2rem;
+  }
+
+  &__open-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  &__time,
+  &__status {
+    display: block;
+    font-style: italic;
   }
 }

@@ -1,17 +1,17 @@
 dist/
 app/css/*
 
-# Игнорировать временные файлы
-.DC_Store
+# Ignore temporary files
+.DS_Store
 *.tmp
 *.temp
 
-# Игнорировать файлы компиляции
+# Ignore compiled files
 *.o
 *.out
 *.class
 
-# Игнорировать файлы настроек IDE
+# Ignore IDE configuration files
 .idea/
 .idea/*
 .vscode/
@@ -19,11 +19,11 @@ app/css/*
 *.ntvs*
 *.sublime*
 
-# Игнорировать зависимости и модули
+# Ignore dependencies and modules
 node_modules/
 bower_components/
 
-# Игнорировать файлы конфигурации
+# Ignore configuration files
 .env
 *.env.local
 .env.*.local
@@ -32,16 +32,16 @@ bower_components/
 .env.production
 package-lock.json
 
-# Игнорировать файлы логов и отчётов
+# Ignore log and report files
 logs/
 *.log
 npm-debug.log*
 nmp-debug.*
 
-# Игнорировать файлы секретной информации
+# Ignore sensitive information files
 *.key
 *.pem
 
-# Игнорировать временные директории
+# Ignore temporary directories
 /temp/
 /tmp/
