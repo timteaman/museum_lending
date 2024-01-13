@@ -65,13 +65,13 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
-// function scripts() {
-//   return src(["./src/js/main.js"])
-//     .pipe(concat("main.min.js"))
-//     .pipe(uglify())
-//     .pipe(dest("./src/js"))
-//     .pipe(browserSync.stream());
-// }
+function scripts() {
+  return src(['./src/js/main.js'])
+    .pipe(concat('main.min.js'))
+    .pipe(uglify())
+    .pipe(dest('./src/js'))
+    .pipe(browserSync.stream());
+}
 
 function images() {
   return src('./src/assets/images/**/*.*')
@@ -107,7 +107,7 @@ function build() {
       './src/assets/fonts/**/*',
       './src/assets/icons/**/*',
       './src/assets/images/**/*',
-      './src/js/main.js',
+      './src/js/main.min.js',
       './src/*.html',
     ],
     { base: 'src' }
@@ -133,7 +133,7 @@ function svgSprites() {
 }
 
 exports.styles = styles;
-// exports.scripts = scripts;
+exports.scripts = scripts;
 exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
@@ -144,4 +144,4 @@ exports.htmlInclude = htmlInclude;
 exports.build = series(cleanDist, images, build);
 
 exports.svg = svgSprites;
-exports.default = parallel(htmlInclude, styles, browsersync, watching);
+exports.default = parallel(htmlInclude, styles, scripts, browsersync, watching);

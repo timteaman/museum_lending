@@ -26,6 +26,7 @@
     font-size: 3rem;
     text-transform: uppercase;
     position: relative;
+    @include line-clamp(1);
 
     &::before {
       content: '';
@@ -45,6 +46,7 @@
     font-family: 'Poppins';
     font-size: 1.2rem;
     text-transform: uppercase;
+    @include line-clamp(1);
   }
 
   &__text {
@@ -55,6 +57,7 @@
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
+    @include line-clamp(3);
   }
 
   &__number {
