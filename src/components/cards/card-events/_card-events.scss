@@ -1,16 +1,20 @@
 .card-events {
-  display: flex;
-  align-items: flex-end;
-  padding: 2.7rem 10rem 2.7rem 2.7rem;
-  gap: 2rem;
-  height: 63.6rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
 
   @include r($r-md) {
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__box {
+    position: absolute;
+    bottom: 2.8rem;
+    left: 2.8rem;
   }
 
   &__inner {
@@ -22,7 +26,7 @@
   }
 
   &__subtitle {
-    font-family: 'Bellefair';
+    @include fontFamily('Bellefair');
     font-size: 3rem;
     text-transform: uppercase;
     position: relative;
@@ -43,14 +47,14 @@
   }
 
   &__date {
-    font-family: 'Poppins';
+    @include fontFamily('Poppins');
     font-size: 1.2rem;
     text-transform: uppercase;
     @include line-clamp(1);
   }
 
   &__text {
-    font-family: 'Poppins';
+    @include fontFamily('Poppins');
     max-width: 62.8rem;
     width: 100%;
     font-size: 1.6rem;
@@ -61,7 +65,7 @@
   }
 
   &__number {
-    font-family: 'Bellefair';
+    @include fontFamily('Bellefair');
     font-size: 6.8rem;
     text-transform: uppercase;
     color: var(--light-gray);

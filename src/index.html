@@ -24,7 +24,7 @@
 
     <header class="header" id="header">
 
-  <div class="container">
+  <div class="container container--header">
 
     <nav class="menu">
 
@@ -48,23 +48,6 @@
           </a>
         </li>
 
-      </ul>
-
-      <a class="logo" href="#header">
-
-        <img class="logo__img" src="./assets/icons/logo.svg" alt="museum logo" width="36" height="46">
-
-        <span class="logo__text">
-          Stone
-          <span class="logo__text--down">
-            Essence
-          </span>
-        </span>
-
-      </a>
-
-      <ul class="menu__list">
-
         <li class="menu__item">
           <a class="menu__link link" href="#gallery">
             gallery
@@ -72,7 +55,7 @@
         </li>
 
         <li class="menu__item">
-          <a class="menu__link link" href="#info">
+          <a class="menu__link link" href="#faq">
             updates
           </a>
         </li>
@@ -84,6 +67,19 @@
         </li>
 
       </ul>
+
+      <a class="header__logo logo" href="#header">
+
+        <img class="logo__img" src="./assets/icons/logo.svg" alt="museum logo" width="36" height="46">
+
+        <span class="logo__text">
+          Stone
+          <span class="logo__text-down">
+            Essence
+          </span>
+        </span>
+
+      </a>
 
       <div class="mobile-menu">
 
@@ -103,7 +99,7 @@
 
         <span class="logo__text">
           Stone
-          <span class="logo__text--down">
+          <span class="logo__text-down">
             Essence
           </span>
         </span>
@@ -121,37 +117,37 @@
     <ul class="menu__list mobile-menu__list">
 
       <li class="menu__item mobile-menu__item">
-        <a class="menu__link mobile-menu__link link" href="#">
+        <a class="menu__link link" href="#">
           home
         </a>
       </li>
 
       <li class="menu__item mobile-menu__item">
-        <a class="menu__link mobile-menu__link link" href="#museum">
+        <a class="menu__link link" href="#museum">
           history
         </a>
       </li>
 
       <li class="menu__item mobile-menu__item">
-        <a class="menu__link mobile-menu__link link" href="#events">
+        <a class="menu__link link" href="#events">
           events
         </a>
       </li>
 
       <li class="menu__item mobile-menu__item">
-        <a class="menu__link mobile-menu__link link" href="#gallery">
+        <a class="menu__link link" href="#gallery">
           gallery
         </a>
       </li>
 
       <li class="menu__item mobile-menu__item">
-        <a class="menu__link mobile-menu__link link" href="#info">
+        <a class="menu__link link" href="#faq">
           updates
         </a>
       </li>
 
       <li class="menu__item mobile-menu__item">
-        <a class="menu__link mobile-menu__link link" href="#footer">
+        <a class="menu__link link" href="#footer">
           contact
         </a>
       </li>
@@ -192,20 +188,18 @@
 
   <div class="museum__inner">
 
-    <h2 class="museum__title museum__item1">
+    <h2 class="museum__title museum__grid-item1">
       The World’s Leading Statue Museum
     </h2>
 
-    <div class="museum__img-wrapper museum__item2">
+    <div class="museum__img-wrapper museum__grid-item2">
 
-      <div class="museum__img-box">
-        <img class="museum__img" src="./assets/images/museum/museum-img1.webp" alt="Photo of the statue of Andrea Bolgi"
-          width="736" height="874">
-      </div>
+      <img class="museum__img" src="./assets/images/museum/museum-img1.webp" alt="Photo of the statue of Andrea Bolgi"
+        width="736" height="874">
 
     </div>
 
-    <div class="museum__text museum__item3">
+    <div class="museum__text museum__grid-item3">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque et, condimentum iaculis ac. Enim leo sit
         vestibulum vulputate placerat vulputate. Quis egestas pellentesque faucibus scelerisque consectetur amet.
@@ -213,7 +207,7 @@
       </p>
     </div>
 
-    <div class="museum__text--second museum__item4">
+    <div class="museum__text-second museum__grid-item4">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque et, condimentum iaculis ac. Enim leo sit
         vestibulum vulputate placerat vulputate. Quis egestas pellentesque faucibus scelerisque consectetur amet.
@@ -223,11 +217,11 @@
       </p>
     </div>
 
-    <div class="museum__link museum__cube museum__item5">
-      <span class="museum__cube--first">
+    <div class="museum__link museum__cube museum__grid-item5">
+      <span class="museum__cube-first">
         <a class="museum__cube-text" href="#">Know More</a>
       </span>
-      <span class="museum__cube--second">
+      <span class="museum__cube-second">
         <a class="museum__cube-text" href="#">About us</a>
       </span>
     </div>
@@ -252,40 +246,46 @@
 
   <div class="swiper events-slider events__wrapper">
 
-    <ul class="swiper-wrapper events-slider__wrapper events__list">
+    <ul class="swiper-wrapper events-slider__wrapper events-slider__list">
       <li class="swiper-slide events__item">
 
-  <article class="card-events" style="background-image: url('../assets/images/events/events-slide1.webp');">
+  <article class="card-events">
 
-    <span class="card-events__number">
-      01
-    </span>
+    <img class="card-events__img" src="../assets/images/events/events-slide1.webp" alt="" width="1280" height="636">
 
-    <div class="card-events__inner">
+    <div class="card-events__box">
 
-      <h3 class="card-events__subtitle">
-        History of The Great King
-      </h3>
-
-      <time class="card-events__date" datetime="2024-09-08T08:00Z">
-        Start on : 08:00 GTS . Monday
-      </time>
-
-      <span class="card-events__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.
+      <span class="card-events__number">
+        01
       </span>
 
-    </div>
+      <div class="card-events__inner">
 
-    <div class="card-events__wrapper">
+        <h3 class="card-events__subtitle">
+          History of The Great King
+        </h3>
 
-      <a class="card-events__link link" href="#">
-        Know More
-      </a>
+        <time class="card-events__date" datetime="2024-09-08T08:00Z">
+          Start on : 08:00 GTS . Monday
+        </time>
 
-      <a class="card-events__book" href="#">
-        Book Ticket
-      </a>
+        <span class="card-events__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.
+        </span>
+
+      </div>
+
+      <div class="card-events__wrapper">
+
+        <a class="card-events__link link" href="#">
+          Know More
+        </a>
+
+        <a class="card-events__book" href="#">
+          Book Ticket
+        </a>
+
+      </div>
 
     </div>
 
@@ -293,151 +293,175 @@
 
 </li><li class="swiper-slide events____item">
 
-  <article class="card-events" style="background-image: url('../assets/images/events/events-slide2.webp');">
+  <article class="card-events">
 
-    <span class="card-events__number">
-      02
-    </span>
+    <img class="card-events__img" src="../assets/images/events/events-slide2.webp" alt="" width="1280" height="636">
 
-    <div class="card-events__inner">
+    <div class="card-events__box">
 
-      <h3 class="card-events__subtitle">
-        History of The Great King
-      </h3>
-
-      <time class="card-events__date" datetime="2024-09-08T08:00Z">
-        Start on : 08:00 GTS . Monday
-      </time>
-
-      <span class="card-events__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.
+      <span class="card-events__number">
+        02
       </span>
 
-    </div>
+      <div class="card-events__inner">
 
-    <div class="card-events__wrapper">
+        <h3 class="card-events__subtitle">
+          History of The Great King
+        </h3>
 
-      <a class="card-events__link link" href="#">
-        Know More
-      </a>
+        <time class="card-events__date" datetime="2024-09-08T08:00Z">
+          Start on : 08:00 GTS . Monday
+        </time>
 
-      <a class="card-events__book" href="#">
-        Book Ticket
-      </a>
+        <span class="card-events__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.
+        </span>
+
+      </div>
+
+      <div class="card-events__wrapper">
+
+        <a class="card-events__link link" href="#">
+          Know More
+        </a>
+
+        <a class="card-events__book" href="#">
+          Book Ticket
+        </a>
+
+      </div>
 
     </div>
 
   </article>
 
-</li><li class="swiper-slide events____item">
+</li><li class="swiper-slide events-slider__item">
 
-  <article class="card-events" style="background-image: url('../assets/images/events/events-slide3.webp');">
+  <article class="card-events">
 
-    <span class="card-events__number">
-      03
-    </span>
+    <img class="card-events__img" src="../assets/images/events/events-slide3.webp" alt="" width="1280" height="636">
 
-    <div class="card-events__inner">
+    <div class="card-events__box">
 
-      <h3 class="card-events__subtitle">
-        History of The Great King
-      </h3>
-
-      <time class="card-events__date" datetime="2024-09-08T08:00Z">
-        Start on : 08:00 GTS . Monday
-      </time>
-
-      <span class="card-events__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.
+      <span class="card-events__number">
+        03
       </span>
 
-    </div>
+      <div class="card-events__inner">
 
-    <div class="card-events__wrapper">
+        <h3 class="card-events__subtitle">
+          History of The Great King
+        </h3>
 
-      <a class="card-events__link link" href="#">
-        Know More
-      </a>
+        <time class="card-events__date" datetime="2024-09-08T08:00Z">
+          Start on : 08:00 GTS . Monday
+        </time>
 
-      <a class="card-events__book" href="#">
-        Book Ticket
-      </a>
+        <span class="card-events__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.
+        </span>
+
+      </div>
+
+      <div class="card-events__wrapper">
+
+        <a class="card-events__link link" href="#">
+          Know More
+        </a>
+
+        <a class="card-events__book" href="#">
+          Book Ticket
+        </a>
+
+      </div>
 
     </div>
 
   </article>
 
-</li><li class="swiper-slide events____item">
+</li><li class="swiper-slide events-slider__item">
 
-  <article class="card-events" style="background-image: url('../assets/images/events/events-slide1.webp');">
+  <article class="card-events">
 
-    <span class="card-events__number">
-      04
-    </span>
+    <img class="card-events__img" src="../assets/images/events/events-slide1.webp" alt="" width="1280" height="636">
 
-    <div class="card-events__inner">
+    <div class="card-events__box">
 
-      <h3 class="card-events__subtitle">
-        History of The Great King
-      </h3>
-
-      <time class="card-events__date" datetime="2024-09-08T08:00Z">
-        Start on : 08:00 GTS . Monday
-      </time>
-
-      <span class="card-events__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.
+      <span class="card-events__number">
+        04
       </span>
 
-    </div>
+      <div class="card-events__inner">
 
-    <div class="card-events__wrapper">
+        <h3 class="card-events__subtitle">
+          History of The Great King
+        </h3>
 
-      <a class="card-events__link link" href="#">
-        Know More
-      </a>
+        <time class="card-events__date" datetime="2024-09-08T08:00Z">
+          Start on : 08:00 GTS . Monday
+        </time>
 
-      <a class="card-events__book" href="#">
-        Book Ticket
-      </a>
+        <span class="card-events__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.
+        </span>
+
+      </div>
+
+      <div class="card-events__wrapper">
+
+        <a class="card-events__link link" href="#">
+          Know More
+        </a>
+
+        <a class="card-events__book" href="#">
+          Book Ticket
+        </a>
+
+      </div>
 
     </div>
 
   </article>
 
-</li><li class="swiper-slide events____item">
+</li><li class="swiper-slide events-slider__item">
 
-  <article class="card-events" style="background-image: url('../assets/images/events/events-slide2.webp');">
+  <article class="card-events">
 
-    <span class="card-events__number">
-      04
-    </span>
+    <img class="card-events__img" src="../assets/images/events/events-slide2.webp" alt="" width="1280" height="636">
 
-    <div class="card-events__inner">
+    <div class="card-events__box">
 
-      <h3 class="card-events__subtitle">
-        History of The Great King
-      </h3>
-
-      <time class="card-events__date" datetime="2024-09-08T08:00Z">
-        Start on : 08:00 GTS . Monday
-      </time>
-
-      <span class="card-events__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.
+      <span class="card-events__number">
+        04
       </span>
 
-    </div>
+      <div class="card-events__inner">
 
-    <div class="card-events__wrapper">
+        <h3 class="card-events__subtitle">
+          History of The Great King
+        </h3>
 
-      <a class="card-events__link link" href="#">
-        Know More
-      </a>
+        <time class="card-events__date" datetime="2024-09-08T08:00Z">
+          Start on : 08:00 GTS . Monday
+        </time>
 
-      <a class="card-events__book" href="#">
-        Book Ticket
-      </a>
+        <span class="card-events__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.
+        </span>
+
+      </div>
+
+      <div class="card-events__wrapper">
+
+        <a class="card-events__link link" href="#">
+          Know More
+        </a>
+
+        <a class="card-events__book" href="#">
+          Book Ticket
+        </a>
+
+      </div>
 
     </div>
 
@@ -448,16 +472,16 @@
 
   </div>
 
-  <div class="slider-actions events-slider__actions">
+  <div class="slider-actions events-slider-actions">
 
-    <div class="swiper-progress-bar events-slider__bar">
-      <div class="swiper-scrollbar-drag events-slider__scrollbar-drag"></div>
+    <div class="swiper-progress-bar events-slider-actions__bar">
+      <div class="swiper-scrollbar-drag events-slider-actions__scrollbar-drag"></div>
     </div>
 
-    <div class="events-slider__inner">
+    <div class="events-slider-actions__inner">
 
       <button
-        class="slider-actions__btn slider-actions__btn--prev events-slider__btn events-slider__btn--prev icon icon--chevronsmall-left"
+        class="slider-actions__btn slider-actions__btn--prev events-slider-actions__btn events-slider-actions__btn--prev icon icon--chevronsmall-left"
         type="button">
 
         <span class="sr-only">
@@ -467,7 +491,7 @@
       </button>
 
       <button
-        class="slider-actions__btn slider-actions__btn--next events-slider__btn events-slider__btn--next icon icon--chevronsmall-right"
+        class="slider-actions__btn slider-actions__btn--next events-slider-actions__btn events-slider-actions__btn--next icon icon--chevronsmall-right"
         type="button">
 
         <span class="sr-only">
@@ -526,43 +550,43 @@
 
   <div class="gallery-carousel__inner">
 
-    <div class="swiper gallery-slider gallery-carousel__wrapper">
+    <div class="swiper gallery-slider gallery-slider__wrapper">
 
-      <ul class="swiper-wrapper gallery-carousel__list">
-        <li class="swiper-slide gallery-carousel__item gallery-carousel__item--active">
+      <ul class="swiper-wrapper gallery-slider__list">
+        <li class="swiper-slide gallery-slider__item gallery-slider__item--active">
 
   <article class="card-gallery">
-    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide1.webp" alt="Sculpture photo">
+    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide1.webp" alt="Sculpture photo" width="395" height="650">
   </article>
 
-</li><li class="swiper-slide gallery-carousel__item gallery-carousel__item--active">
+</li><li class="swiper-slide gallery-slider__item gallery-slider__item--active">
 
   <article class="card-gallery">
-    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide2.webp" alt="Sculpture photo">
+    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide2.webp" alt="Sculpture photo" width="395" height="650">
   </article>
 
-</li><li class="swiper-slide gallery-carousel__item gallery-carousel__item--active">
+</li><li class="swiper-slide gallery-slider__item gallery-slider__item--active">
 
   <article class="card-gallery">
-    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide3.webp" alt="Sculpture photo">
+    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide3.webp" alt="Sculpture photo" width="395" height="650">
   </article>
 
-</li><li class="swiper-slide gallery-carousel__item gallery-carousel__item--active">
+</li><li class="swiper-slide gallery-slider__item gallery-slider__item--active">
 
   <article class="card-gallery">
-    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide1.webp" alt="Sculpture photo">
+    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide1.webp" alt="Sculpture photo" width="395" height="650">
   </article>
 
-</li><li class="swiper-slide gallery-carousel__item gallery-carousel__item--active">
+</li><li class="swiper-slide gallery-slider__item gallery-carousel__item--active">
 
   <article class="card-gallery">
-    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide2.webp" alt="Sculpture photo">
+    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide2.webp" alt="Sculpture photo" width="395" height="650">
   </article>
 
-</li><li class="swiper-slide gallery-carousel__item gallery-carousel__item--active">
+</li><li class="swiper-slide gallery-slider__item gallery-slider__item--active">
 
   <article class="card-gallery">
-    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide3.webp" alt="Sculpture photo">
+    <img class="card-gallery__img" src="./assets/images/gallery-carousel/gallery-carousel-slide3.webp" alt="Sculpture photo" width="395" height="650">
   </article>
 
 </li>
@@ -570,16 +594,16 @@
 
     </div>
 
-    <div class="slider-actions gallery-slider__actions">
+    <div class="slider-actions gallery-slider-actions">
 
-      <div class="swiper-progress-bar gallery-slider__bar">
-        <div class="swiper-scrollbar-drag gallery-slider__scrollbar-drag"></div>
+      <div class="swiper-progress-bar gallery-slider-actions__bar">
+        <div class="swiper-scrollbar-drag gallery-slider-actions__scrollbar-drag"></div>
       </div>
 
-      <div class="gallery-slider__inner">
+      <div class="gallery-slider-actions__inner">
 
         <button
-          class="slider-actions__btn slider-actions__btn--prev gallery-slider__btn gallery-slider__btn--prev icon icon--chevronsmall-left"
+          class="slider-actions__btn slider-actions__btn--prev gallery-slider-actions__btn gallery-slider-actions__btn--prev icon icon--chevronsmall-left"
           type="button">
 
           <span class="sr-only">
@@ -589,7 +613,7 @@
         </button>
 
         <button
-          class="slider-actions__btn slider-actions__btn--next gallery-slider__btn gallery-slider__btn--next icon icon--chevronsmall-right"
+          class="slider-actions__btn slider-actions__btn--next gallery-slider-actions__btn gallery-slider-actions__btn--next icon icon--chevronsmall-right"
           type="button">
 
           <span class="sr-only">
@@ -606,44 +630,44 @@
 
 </section>
 
-        <section class="info section" id="info">
+        <section class="faq section" id="faq">
 
-  <div class="info__inner">
+  <div class="faq__inner">
 
-    <h2 class="info__title">
+    <h2 class="faq__title">
       FAQs
-      <span class="info__title--text">
+      <span class="faq__title-text">
         Stone Essence museum
       </span>
 
     </h2>
 
-    <ul class="info__list">
+    <ul class="faq__list">
 
-      <li class="info__item">
+      <li class="faq__item">
 
-        <span class="info__subtitle icon icon--chevronbig-right">
-          Can visitors take pictures in the museum?
-        </span>
+        <details class="faq__details">
 
-        <div class="info__desc">
+          <summary class="faq__desc">
+            Can visitors take pictures in the museum?
+          </summary>
 
           <p>
             Visitors are welcome to take pictures in the museum to capture and cherish their memorable moments. Please
             be mindful of any photography guidelines in place. Enjoy your visit and happy snapping!
           </p>
 
-        </div>
+        </details>
 
       </li>
 
-      <li class="info__item">
+      <li class="faq__item">
 
-        <span class="info__subtitle icon icon--chevronbig-right">
-          What types of artifacts can be found in the museum?
-        </span>
+        <details class="faq__details">
 
-        <div class="info__desc">
+          <summary class="faq__desc">
+            What types of artifacts can be found in the museum?
+          </summary>
 
           <p>
             In our sculpture museum, you can discover a rich collection of diverse artifacts, showcasing an array of
@@ -652,31 +676,31 @@
             of sculptures representing various styles, periods, and cultures.
           </p>
 
-        </div>
+        </details>
 
       </li>
 
-      <li class="info__item">
+      <li class="faq__item">
 
-        <span class="info__subtitle icon icon--chevronbig-right">
-          What time is the museum open?
-        </span>
+        <details class="faq__details">
 
-        <div class="info__desc">
+          <summary class="faq__desc">
+            What time is the museum open?
+          </summary>
 
-          <p class="info__open-title">
+          <p class="faq__open-title">
             The museum is open to visitors during the following hours:
           </p>
 
-          <data class="info__time" value="2024-01-13T10:00/2024-01-13T18:00">
+          <data class="faq__time" value="2024-01-13T10:00/2024-01-13T18:00">
             Monday to Friday: 10:00 AM - 6:00 PM
           </data>
 
-          <data class="info__time" value="2024-01-13T10:00/2024-01-13T18:00">
+          <data class="faq__time" value="2024-01-13T10:00/2024-01-13T18:00">
             Saturday: 10:00 AM - 4:00 PM
           </data>
 
-          <span class="info__status">
+          <span class="faq__status">
             Closed on Sundays
           </span>
 
@@ -685,17 +709,17 @@
             the most up-to-date information. We look forward to your visit!
           </p>
 
-        </div>
+        </details>
 
       </li>
 
-      <li class="info__item">
+      <li class="faq__item">
 
-        <span class="info__subtitle icon icon--chevronbig-right">
-          How can I get involved or support the museum?
-        </span>
+        <details class="faq__details">
 
-        <div class="info__desc">
+          <summary class="faq__desc">
+            How can I get involved or support the museum?
+          </summary>
 
           <p>
             Support our museum by becoming a member for exclusive benefits. Volunteer your time, donate artifacts, or
@@ -703,11 +727,12 @@
             preserving history.
           </p>
 
-        </div>
+        </details>
 
       </li>
 
     </ul>
+
 
   </div>
 
@@ -728,7 +753,7 @@
 
           <span class="logo__text">
             Stone
-            <span class="logo__text--down">
+            <span class="logo__text-down">
               Essence
             </span>
           </span>
@@ -783,6 +808,7 @@
 
         <form class="footer__form" action="/subscribe" method="post">
 
+          <label class="footer__label" for="userEmail"></label>
           <input class="footer__input" type="email" id="userEmail" name="userEmail" placeholder="Enter your Email"
             required>
           <button class="footer__btn button" type="submit">
@@ -791,32 +817,36 @@
 
         </form>
 
-        <address class="footer__address">
+        <address class="address">
 
-          <span>
-            Reach us
-          </span>
+  <span>
+    Reach us
+  </span>
 
-          <ul class="footer__contact">
+  <ul class="address__contact">
 
-            <li class="footer__contact-item">
-              <a class="footer__contact-link link icon icon--mail" href="mailto:work@uxmcreativestudio.com">
-                info@stonemuseum.com
-              </a>
-            </li>
+    <li class="address__item">
+      <a class="address__link link icon icon--mail" href="mailto:work@uxmcreativestudio.com">
+        info@stonemuseum.com
+      </a>
+    </li>
 
-            <li class="footer__contact-item">
-              <a class="footer__contact-link link icon icon--location" href="#">
-                New York, USA
-              </a>
-            </li>
+    <li class="address__item">
+      <a class="address__link link icon icon--location" href="#">
+        New York, USA
+      </a>
+    </li>
 
-          </ul>
+  </ul>
 
-        </address>
+</address>
+
       </div>
+
     </div>
+
   </div>
+
 </footer>
 
   </div>

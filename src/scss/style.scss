@@ -11,7 +11,7 @@
 @import '../modules/museum/museum';
 @import '../modules/events/events';
 @import '../modules/gallery/gallery';
-@import '../modules/info/info';
+@import '../modules/faq/faq';
 @import '../modules/gallery-carousel/gallery-carousel';
 
 // components
@@ -20,5 +20,6 @@
 @import '../components/header/header';
 @import '../components/cards/card-gallery/card-gallery';
 @import '../components/cards/card-events/card-events';
-@import '../components/swiperjs/swiperjs';
 @import '../components/mobile-menu/mobile-menu';
+@import '../components/adress/address';
+@import '../components/swiperjs/swiperjs';

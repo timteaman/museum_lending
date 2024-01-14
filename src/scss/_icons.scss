@@ -58,4 +58,10 @@
       mask-image: url('../assets/icons/sprite.svg#burger-close');
     }
   }
+
+  &--line-grid {
+    &::before {
+      mask-image: url('../assets/icons/line-grid.svg');
+    }
+  }
 }

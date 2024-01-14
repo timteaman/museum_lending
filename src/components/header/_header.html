@@ -1,6 +1,6 @@
 <header class="header" id="header">
 
-  <div class="container">
+  <div class="container container--header">
 
     <nav class="menu">
 
@@ -24,23 +24,6 @@
           </a>
         </li>
 
-      </ul>
-
-      <a class="logo" href="#header">
-
-        <img class="logo__img" src="./assets/icons/logo.svg" alt="museum logo" width="36" height="46">
-
-        <span class="logo__text">
-          Stone
-          <span class="logo__text--down">
-            Essence
-          </span>
-        </span>
-
-      </a>
-
-      <ul class="menu__list">
-
         <li class="menu__item">
           <a class="menu__link link" href="#gallery">
             gallery
@@ -48,7 +31,7 @@
         </li>
 
         <li class="menu__item">
-          <a class="menu__link link" href="#info">
+          <a class="menu__link link" href="#faq">
             updates
           </a>
         </li>
@@ -60,6 +43,19 @@
         </li>
 
       </ul>
+
+      <a class="header__logo logo" href="#header">
+
+        <img class="logo__img" src="./assets/icons/logo.svg" alt="museum logo" width="36" height="46">
+
+        <span class="logo__text">
+          Stone
+          <span class="logo__text-down">
+            Essence
+          </span>
+        </span>
+
+      </a>
 
       @include('../mobile-menu/_mobile-menu.html')
 

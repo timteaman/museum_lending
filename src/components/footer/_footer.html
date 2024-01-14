@@ -9,7 +9,7 @@
 
           <span class="logo__text">
             Stone
-            <span class="logo__text--down">
+            <span class="logo__text-down">
               Essence
             </span>
           </span>
@@ -64,6 +64,7 @@
 
         <form class="footer__form" action="/subscribe" method="post">
 
+          <label class="footer__label" for="userEmail"></label>
           <input class="footer__input" type="email" id="userEmail" name="userEmail" placeholder="Enter your Email"
             required>
           <button class="footer__btn button" type="submit">
@@ -72,30 +73,12 @@
 
         </form>
 
-        <address class="footer__address">
+        @include('../adress/_address.html')
 
-          <span>
-            Reach us
-          </span>
-
-          <ul class="footer__contact">
-
-            <li class="footer__contact-item">
-              <a class="footer__contact-link link icon icon--mail" href="mailto:work@uxmcreativestudio.com">
-                info@stonemuseum.com
-              </a>
-            </li>
-
-            <li class="footer__contact-item">
-              <a class="footer__contact-link link icon icon--location" href="#">
-                New York, USA
-              </a>
-            </li>
-
-          </ul>
-
-        </address>
       </div>
+
     </div>
+
   </div>
+
 </footer>

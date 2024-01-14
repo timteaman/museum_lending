@@ -1,0 +1,22 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    &::before {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

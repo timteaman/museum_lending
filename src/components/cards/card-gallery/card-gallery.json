@@ -1,37 +1,37 @@
 [
   {
-    "cardGalleryClass": "gallery-carousel__item",
-    "cardGalleryClassActive": "gallery-carousel__item--active",
+    "cardGalleryClass": "gallery-slider__item",
+    "cardGalleryClassActive": "gallery-slider__item--active",
     "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide1.webp",
     "cardGalleryAlt": "Sculpture photo"
   },
   {
-    "cardGalleryClass": "gallery-carousel__item",
-    "cardGalleryClassActive": "gallery-carousel__item--active",
+    "cardGalleryClass": "gallery-slider__item",
+    "cardGalleryClassActive": "gallery-slider__item--active",
     "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide2.webp",
     "cardGalleryAlt": "Sculpture photo"
   },
   {
-    "cardGalleryClass": "gallery-carousel__item",
-    "cardGalleryClassActive": "gallery-carousel__item--active",
+    "cardGalleryClass": "gallery-slider__item",
+    "cardGalleryClassActive": "gallery-slider__item--active",
     "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide3.webp",
     "cardGalleryAlt": "Sculpture photo"
   },
   {
-    "cardGalleryClass": "gallery-carousel__item",
-    "cardGalleryClassActive": "gallery-carousel__item--active",
+    "cardGalleryClass": "gallery-slider__item",
+    "cardGalleryClassActive": "gallery-slider__item--active",
     "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide1.webp",
     "cardGalleryAlt": "Sculpture photo"
   },
   {
-    "cardGalleryClass": "gallery-carousel__item",
+    "cardGalleryClass": "gallery-slider__item",
     "cardGalleryClassActive": "gallery-carousel__item--active",
     "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide2.webp",
     "cardGalleryAlt": "Sculpture photo"
   },
   {
-    "cardGalleryClass": "gallery-carousel__item",
-    "cardGalleryClassActive": "gallery-carousel__item--active",
+    "cardGalleryClass": "gallery-slider__item",
+    "cardGalleryClassActive": "gallery-slider__item--active",
     "cardGalleryImg": "./assets/images/gallery-carousel/gallery-carousel-slide3.webp",
     "cardGalleryAlt": "Sculpture photo"
   }

@@ -32,7 +32,7 @@
     sans-serif;
 }
 
-// @include fontFamily('Euclid Galactic');
+// @include fontFamily('');
 
 @mixin bg-image($image-path, $bg-size) {
     background-image: url($image-path);

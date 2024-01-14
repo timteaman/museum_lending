@@ -32,7 +32,6 @@ figure,
 figcaption,
 blockquote {
     margin: 0;
-    font: inherit;
 }
 
 label {
@@ -40,9 +39,8 @@ label {
     font: inherit;
 }
 
-ul,
-ol {
-    list-style: none;
+li {
+    list-style-type: none;
 }
 
 img {

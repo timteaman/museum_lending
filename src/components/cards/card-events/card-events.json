@@ -5,7 +5,8 @@
     "card-eventsSubtitle": "History of The Great King",
     "card-eventsDate": "Start on : 08:00 GTS . Monday",
     "card-eventsText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.",
-    "card-eventsUrl": "../assets/images/events/events-slide1.webp"
+    "card-eventsUrl": "../assets/images/events/events-slide1.webp",
+    "card-eventsAlt": "Our event"
   },
   {
     "card-eventsClass": "events____item",
@@ -13,30 +14,34 @@
     "card-eventsSubtitle": "History of The Great King",
     "card-eventsDate": "Start on : 08:00 GTS . Monday",
     "card-eventsText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.",
-    "card-eventsUrl": "../assets/images/events/events-slide2.webp"
+    "card-eventsUrl": "../assets/images/events/events-slide2.webp",
+    "card-eventsAlt": "Our event"
   },
   {
-    "card-eventsClass": "events____item",
+    "card-eventsClass": "events-slider__item",
     "card-eventsNumber": "03",
     "card-eventsSubtitle": "History of The Great King",
     "card-eventsDate": "Start on : 08:00 GTS . Monday",
     "card-eventsText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.",
-    "card-eventsUrl": "../assets/images/events/events-slide3.webp"
+    "card-eventsUrl": "../assets/images/events/events-slide3.webp",
+    "card-eventsAlt": "Our event"
   },
   {
-    "card-eventsClass": "events____item",
+    "card-eventsClass": "events-slider__item",
     "card-eventsNumber": "04",
     "card-eventsSubtitle": "History of The Great King",
     "card-eventsDate": "Start on : 08:00 GTS . Monday",
     "card-eventsText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.",
-    "card-eventsUrl": "../assets/images/events/events-slide1.webp"
+    "card-eventsUrl": "../assets/images/events/events-slide1.webp",
+    "card-eventsAlt": "Our event"
   },
   {
-    "card-eventsClass": "events____item",
+    "card-eventsClass": "events-slider__item",
     "card-eventsNumber": "04",
     "card-eventsSubtitle": "History of The Great King",
     "card-eventsDate": "Start on : 08:00 GTS . Monday",
     "card-eventsText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum elementum pharetra elementum iaculis consequat. Lectus leo egestas mauris amet.",
-    "card-eventsUrl": "../assets/images/events/events-slide2.webp"
+    "card-eventsUrl": "../assets/images/events/events-slide2.webp",
+    "card-eventsAlt": "Our event"
   }
 ]

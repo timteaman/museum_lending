@@ -31,12 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const eventsSlider = createSlider('.events-slider', {
     scrollbar: {
-      el: '.events-slider__bar',
+      el: '.events-slider-actions__bar',
       draggable: true,
     },
     navigation: {
-      nextEl: '.events-slider__btn--next',
-      prevEl: '.events-slider__btn--prev',
+      nextEl: '.events-slider-actions__btn--next',
+      prevEl: '.events-slider-actions__btn--prev',
     },
     speed: 1000,
     slidesPerView: 1,
@@ -44,24 +44,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const gallerySlider = createSlider('.gallery-slider', {
     scrollbar: {
-      el: '.gallery-slider__bar',
+      el: '.gallery-slider-actions__bar',
       draggable: true,
     },
     navigation: {
-      nextEl: '.gallery-slider__btn--next',
-      prevEl: '.gallery-slider__btn--prev',
+      nextEl: '.gallery-slider-actions__btn--next',
+      prevEl: '.gallery-slider-actions__btn--prev',
     },
     speed: 1000,
     slidesPerView: 3,
     slidesPerView: window.innerWidth <= 992 ? 1 : 3,
-  });
-
-  // show and hide info block- content
-
-  document.querySelectorAll('.info__item').forEach(function (item) {
-    item.addEventListener('click', function () {
-      this.classList.toggle('show-content');
-    });
   });
 
   // header fixed

@@ -37,6 +37,10 @@ body {
   max-width: 128rem;
   padding: 0 1.5rem;
   margin: 0 auto;
+
+  &--header {
+    position: relative;
+  }
 }
 
 .section {
@@ -71,7 +75,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0 0px !important;
   background-color: var(--dark-charcoal);
   transition: background-color 0.4s;
 }
