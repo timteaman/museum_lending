@@ -52,6 +52,11 @@
   display: flex;
   justify-content: space-between;
 
+  @include r($r-sm) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
   &__inner {
     display: flex;
     gap: 2rem;
@@ -85,8 +90,15 @@
 .gallery-slider {
 
   &__wrapper {
-    height: 75.5rem;
+    min-height: 75.5rem;
     margin-bottom: 10rem;
+    display: flex;
+    align-items: center;
+
+    @include r($r-sm) {
+      min-height: 55.5rem;
+      margin-bottom: 5rem;
+    }
   }
 
   &__list {
@@ -142,12 +154,12 @@
 
 .swiper-slide.swiper-slide-active.gallery-slider__item--active {
   transition: 0.8s ease-in-out;
-  transform: scale(1.4);
+  transform: scale(1.7);
   z-index: 2;
 }
 
 .swiper-slide.gallery-slider__item--active:not(.swiper-slide-active) {
   transition: 0.8s ease-in-out;
-  transform: scale(0.7);
+  transform: scale(0.9);
   z-index: 1;
 }

@@ -46,9 +46,9 @@ body {
 .section {
   padding: 0 0 10rem 0;
 
-  // @include r($r-md) {
-  //   padding: 0 0 5rem 0;
-  // }
+  @include r($r-sm) {
+    padding: 0 0 5rem 0;
+  }
 }
 
 .logo {

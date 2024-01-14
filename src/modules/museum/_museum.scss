@@ -12,13 +12,17 @@
       'item3 item4'
       'item3 item5';
 
+
+
     @include r($r-md) {
-      grid-template-rows: repeat(3, auto);
+      grid-template-rows: repeat(5, auto);
       grid-template-areas:
-        '... item2'
-        'item1 item2'
-        'item3 item4'
-        'item3 item5';
+        'item1 item1'
+        'item2 item2'
+        'item3 item3'
+        'item4 item4'
+        'item5 item5';
+
     }
   }
 
@@ -46,6 +50,11 @@
 
     @include r($r-md) {
       font-size: 7rem;
+      text-align: center;
+    }
+
+    @include r($r-xs) {
+      font-size: 5rem;
     }
   }
 
@@ -56,6 +65,7 @@
     background-size: cover;
     position: relative;
     overflow: hidden;
+    margin-bottom: 5.2rem;
 
     &::before,
     &::after {
@@ -80,29 +90,61 @@
     }
   }
 
+  &__img-wrapper {
+    @include r($r-md) {
+      max-height: 70rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   &__img {
-    margin-bottom: 5.2rem;
+    @include r($r-lg) {
+      object-fit: cover;
+    }
   }
 
-  &__text>p {
-    max-width: 44.2rem;
-    width: 100%;
-    font-family: 'Poppins';
-    font-weight: 300;
-    font-size: 2.8rem;
-    line-height: 1.4;
+  &__text {
+
+    @include r($r-md) {
+      margin-bottom: 2rem;
+    }
+
+    &>p {
+      max-width: 44.2rem;
+      width: 100%;
+      font-family: 'Poppins';
+      font-weight: 300;
+      font-size: 2.8rem;
+      line-height: 1.4;
+
+
+      @include r($r-md) {
+        max-width: 100%;
+      }
+    }
   }
 
-  &__text-second>p {
-    max-width: 81rem;
-    width: 100%;
-    font-family: 'Poppins';
-    font-size: 2.4rem;
-    line-height: 1.6;
-    font-weight: 300;
-    margin-bottom: 3.2rem;
-    background-color: var(--jet-black);
-    padding-left: 2rem;
+  &__text-second {
+    &>p {
+      max-width: 81rem;
+      width: 100%;
+      font-family: 'Poppins';
+      font-size: 2.4rem;
+      line-height: 1.6;
+      font-weight: 300;
+      margin-bottom: 3.2rem;
+      background-color: var(--jet-black);
+      padding-left: 2rem;
+
+      @include r($r-lg) {
+        padding-left: 0;
+      }
+
+      @include r($r-md) {
+        max-width: 100%;
+      }
+    }
   }
 
   &__link {

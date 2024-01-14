@@ -15,6 +15,7 @@
     position: absolute;
     bottom: 2.8rem;
     left: 2.8rem;
+    right: 2.8rem;
   }
 
   &__inner {
@@ -23,6 +24,10 @@
     max-width: 62.8rem;
     width: 100%;
     gap: 1.4rem;
+
+    @include r($r-sm) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__subtitle {

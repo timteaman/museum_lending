@@ -57,6 +57,7 @@
 
     @include r($r-md) {
       font-size: 7rem;
+      margin-bottom: 10rem;
     }
 
     @include r($r-xs) {

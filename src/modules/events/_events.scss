@@ -5,6 +5,12 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 6.4rem;
+
+    @include r($r-xs) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 3rem;
+    }
   }
 
   &__title {
@@ -33,6 +39,10 @@
 
     @include r($r-md) {
       font-size: 5rem;
+    }
+
+    @include r($r-xs) {
+      margin-bottom: 5rem;
     }
   }
 

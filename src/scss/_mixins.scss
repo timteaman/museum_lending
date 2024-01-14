@@ -40,3 +40,20 @@
     background-size: $bg-size;
     background-repeat: no-repeat;
 }
+
+@mixin custom-scrollbar($width: 0.8, $height: 0.8, $bdrs: 1, $backgroundColor: var(--jet-black)) {
+    &::-webkit-scrollbar {
+        width: #{$width}rem;
+        height: #{$height}rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #{var(--slate-gray)};
+        border-radius: #{$bdrs}rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #{$backgroundColor};
+        border-radius: #{$bdrs}rem;
+    }
+}
